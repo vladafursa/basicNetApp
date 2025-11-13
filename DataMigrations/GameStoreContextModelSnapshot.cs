@@ -56,6 +56,23 @@ namespace MyAspNetApp.DataMigrations
                     b.HasKey("Id");
 
                     b.ToTable("Genres");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Fighting"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Sports"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Racing"
+                        });
                 });
 
             modelBuilder.Entity("MyAspNetApp.Entities.Game", b =>
