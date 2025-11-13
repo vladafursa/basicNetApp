@@ -18,5 +18,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapGamesEndpoints();
-
+app.MigrateDb();
 app.Run();
