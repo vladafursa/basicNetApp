@@ -1,1 +1,32 @@
 appsettings.json
+# Build artifacts
+bin/
+obj/
+
+# Databases
+*.db
+*.db-shm
+*.db-wal
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDE settings
+.vs/
+.vscode/
+
+# Logs & temp
+*.log
+*.tmp
+
+# Config overrides
+appsettings.Development.json
+
+# Optional: EF Core migrations (if you prefer not to commit them)
+DataMigrations/
+
+# Local test files
+games.http
